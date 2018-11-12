@@ -1,0 +1,773 @@
+/*
+TITLE: YUrShot;
+AUTHOR: OLAKUNLE VICTOR;
+ORGANISATION: ANGEL WORKS;
+YEAR: 2017;
+*/
+
+
+
+
+
+@font-face {
+	font-family: font;
+	src: url('font.ttf');
+}
+
+
+
+* {
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	font-family: font;
+	outline: none;
+}
+body {
+	margin: 0;
+	margin-top: 0;
+	margin-left: 32%;
+	width: 58%;
+	padding: 3% 3%;
+	color: rgb(50,50,50);
+	background: rgb(230,230,230);
+}
+.large-head {
+	width: 25%;
+	height: 100%;
+	padding: 5% 2%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0);
+	border-right: 1px solid rgba(255,255,255,0.15);
+}
+.small-head {
+	width: 90%;
+	position: fixed;
+	padding: 3% 5%;
+	padding-top: 5%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.91);
+	border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.ys-not-none {
+	display: none;
+}
+.ys-none {
+	display: block;
+}
+
+
+
+input {
+	border: none;
+	background: rgba(255,255,255,0.05)!important;
+	padding: 0;
+	border-radius: 2px;
+	color: slategray;
+}
+button {
+	width: auto;
+	border: none;
+	background: rgba(255,255,255,0.05)!important;
+	padding: 0;
+	border-radius: 2px;
+	color: slategray!important;
+	cursor: pointer;
+}
+textarea {
+	border: none;
+	background: rgba(255,255,255,0.05)!important;
+	padding: 0;
+	border-radius: 2px;
+	color: slategray;
+	height: 100px;
+}
+.comment-area {
+	width: 67%;
+	height: auto;
+	padding: 1% 2%;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: rgb(248,248,248);
+}
+button,img,div {
+	cursor: hand;
+}
+
+
+
+
+
+.small-img {
+	width: 7%;
+	height: 42px;
+	border-radius: 100px;
+}
+.nav-img {
+	width: 75%;
+	min-height: 150px;
+	max-height: 190px;
+}
+.post-img {
+	width: 50%;
+	min-height: 255px;
+	max-height: 305px;
+	padding-right: 0.5%;
+}
+.small-post-img {
+	width: 25%;
+	min-height: 125px;
+	max-height: 150px;
+}
+.signup-img {
+	width: 28%;
+	min-height: 160px;
+	max-height: 200px;
+}
+.profile-img {
+	min-width: 50%;
+	max-width: 70%;
+	min-height: 300px;
+	max-height: 350px;
+}
+.cover-img {
+	width: 100%;
+	height: 300px;
+	background: url('../img/cover.jpg') center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.cover-text {
+	background: rgba(0,0,0,0.7)!important;
+	color: white;
+	padding: 2%;
+	width: 100%;
+}
+.cover-text:hover {
+	background: rgba(255,255,255,0.6)!important;
+	color: black;
+}
+.comment-media {
+	min-width: 30%;
+	max-width: 45%;
+	height: 200px;
+}
+.search-img {
+	width: 100%;
+	min-height: 150px;
+	max-height: 200px;
+}
+.search-width {
+	width: 35%!important;
+}
+video:hover {
+	opacity: 0.6;
+}
+.edit-img-small {
+	width: 25%;
+	height: 135px;
+}
+
+
+
+
+
+
+
+
+
+
+
+a,a:hover,a:visited {
+	text-decoration: none;
+	color: slategray;
+	padding: 0;
+}
+.nav-button {
+	background: rgba(255,255,255,0.38);
+}
+.nav-button:hover,.nav-button>i:hover {
+	background: rgba(0,0,0,0.99)!important;
+	color: white;
+}
+
+
+
+.border {
+	border: 1px solid rgba(255,255,255,0.1)!important;
+}
+.pad {
+	padding: 2%;
+}
+.no-pad {
+	padding: 0;
+}
+.pad-plus {
+	padding: 4%;
+}
+.center {
+	text-align: center;
+}
+.left-align {
+	text-align: left!important;
+}
+.right-align {
+	text-align: right!important;
+}
+.inl {
+	display: inline-block;
+}
+.none {
+	display: none;
+}
+.block {
+	display: block;
+}
+.hide {
+	width: 0;
+	height: 0;
+}
+.no-style {
+	background: transparent;
+	border: none;
+} 
+.bold {
+	font-weight: bold;
+}
+.uppercase {
+	text-transform: capitalize;
+}
+.border-bottom {
+	border-bottom: 1px solid rgba(0,0,0,0.07);
+	padding-bottom: 4%;
+}
+.pad-bottom {
+	margin-bottom: 6%!important;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.opace {
+	opacity: 0.4;
+}
+.m-body {
+	background: rgb(248,248,248);
+}
+
+
+
+
+
+.small-text {
+	font-size: 14px;
+}
+.medium-text {
+	font-size: 18px;
+}
+.big-text {
+	font-size: 20px;
+}
+.huge-text {
+	font-size: 25px;
+}
+.extreme-text {
+	font-size: 35px;
+}
+
+
+
+
+
+
+
+
+.ten {
+	width: 10%;
+}
+.ten-plus {
+	width: 15%;
+}
+.twenty {
+	width: 20%;
+}
+.thirty {
+	width: 30%;
+}
+.thirty-plus {
+	width: 35%;
+}
+.forty {
+	width: 40%;
+}
+.half {
+	width: 50%;
+}
+.sixty {
+	width: 60%;
+}
+.sixty-plus {
+	width: 66%;
+}
+.seventy {
+	width: 70%;
+}
+.eighty {
+	width: 80%;
+}
+.ninety {
+	width: 90%;
+}
+.full {
+	width: 95%;
+}
+
+
+
+
+.red {
+	color: rgb(255,110,110);
+}
+.blue {
+	color: rgb(100,100,255)!important;
+}
+.green {
+	color: rgb(100,200,100);
+}
+.black {
+	color: black;
+}
+.white {
+	color: white!important;
+}
+.default {
+	color: slategray;
+}
+
+
+
+
+.pad-right {
+	margin-right: 2%;
+}
+.pad-right-short {
+	margin-right: 6%;
+}
+.pad-right-long {
+	margin-right: 8%;
+}
+.pad-left {
+	margin-left: 2%;
+}
+.pad-left-short {
+	margin-left: 6%;
+}
+.pad-left-long {
+	margin-left: 8%;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+
+
+
+
+@media screen and (max-width: 450px) and (min-width: 1px) {
+* {
+	font-size: 13px;
+}
+body {
+	margin: 0;
+	margin-left: 0;
+	margin-top: 25%;
+	width: 90%;
+	padding: 1% 5%;
+	padding-bottom: 3%;
+	color: slategray;
+	background: rgb(0,0,0);
+}
+.ys-not-none {
+	display: block;
+}
+.ys-none {
+	display: none;
+}
+.trans {
+	background: transparent!important;
+	border: 1px solid slategray;
+}
+.trans:hover {
+	color: white!important;
+	background: black!important;
+	border: 1px solid white;
+}
+.pad-bottom {
+	margin-bottom: 6%!important;
+}
+
+
+
+
+.comment-area {
+	width: 96.5%;
+	height: auto;
+	padding: 1% 2%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: rgba(248,248,248);
+}
+.chat-width {
+	width: 30%;
+}
+.small-img {
+	width: 11%;
+	height: 30px;
+	border-radius: 100px;
+}
+.post-img {
+	width: 64%;
+	min-height: 180px;
+	max-height: 280px;
+	padding-right: 0.5%;
+}
+.small-post-img {
+	width: 35%;
+	min-height: 88px;
+	max-height: 135px;
+}
+.profile-img {
+	min-width: 65%;
+	max-width: 75%;
+	min-height: 150px;
+	max-height: 220px;
+}
+.comment-media {
+	min-width: 40%;
+	max-width: 50%;
+	height: 165;
+}
+.search-img {
+	width: 100%;
+	min-height: 70px;
+	max-height: 120px;
+}
+video:hover {
+	opacity: 0.5;
+}
+.edit-img-small {
+	width: 25%;
+	height: 80px;
+}
+.search-width {
+	width: 34%!important;
+}
+
+
+
+.small-text {
+	font-size: 12px;
+}
+.medium-text {
+	font-size: 16px;
+}
+.big-text {
+	font-size: 18px;
+}
+.huge-text {
+	font-size: 22px;
+}
+.extreme-text {
+	font-size: 32px;
+}
+
+
+.pad {
+	padding: 2.1%;
+}
+.pad-plus {
+	padding: 4.1%;
+}
+.sixty-plus {
+	width: 80%;
+}
+.thirty-plus {
+	width: 40%;
+}
+.ten-plus {
+	width: 25%;
+}
+.eighty {
+	width: 87%;
+}  
+}
+
+
+
+
+@media screen and (max-width: 600px) and (min-width: 451px) {
+* {
+	font-size: 13px;
+}
+body {
+	margin: 0;
+	margin-left: 0;
+	margin-top: 25%;
+	width: 90%;
+	padding: 1% 5%;
+	color: slategray;
+	background: rgb(0,0,0);
+	padding-bottom: 3%;
+}
+.ys-not-none {
+	display: block;
+}
+.ys-none {
+	display: none;
+}
+.trans {
+	background: transparent!important;
+	border: 1px solid slategray;
+}
+.trans:hover {
+	color: white!important;
+	background: black!important;
+	border: 1px solid white;
+}
+
+
+
+
+.comment-area {
+	width: 96.5%;
+	height: auto;
+	padding: 1% 2%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: rgba(248,248,248);
+}
+
+.small-img {
+	width: 8%;
+	height: 30px;
+	border-radius: 100px;
+}
+.post-img {
+	width: 64%;
+	min-height: 250px;
+	max-height: 400px;
+	padding-right: 0.5%;
+}
+.small-post-img {
+	width: 35%;
+	min-height: 123px;
+	max-height: 198px;
+}
+.profile-img {
+	min-width: 65%;
+	max-width: 75%;
+	min-height: 200px;
+	max-height: 350px;
+}
+.comment-media {
+	width: 35%;
+	min-height: 100px;
+	max-height: 150px;
+}
+.chat-width {
+	width: 50%;
+}
+.search-img {
+	width: 100%;
+	min-height: 140px;
+	max-height: 190px;
+}
+video:hover {
+	opacity: 0.5;
+}
+.edit-img-small {
+	width: 25%;
+	height: 130px;
+}
+.search-width {
+	width: 35%!important;
+}
+
+
+
+.small-text {
+	font-size: 12px;
+}
+.medium-text {
+	font-size: 17px;
+}
+.big-text {
+	font-size: 19px;
+}
+.huge-text {
+	font-size: 23px;
+}
+.extreme-text {
+	font-size: 33px;
+}
+
+
+.pad {
+	padding: 2.1%;
+}
+.pad-plus {
+	padding: 4.1%;
+}
+.sixty-plus {
+	width: 80%;
+}
+.thirty-plus {
+	width: 40%;
+} 
+.eighty {
+	width: 87%;
+}  
+}
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+@media screen and (max-width: 800px) and (min-width: 601px) {
+* {
+	font-size: 13px;
+}
+body {
+	margin: 0;
+	margin-left: 0;
+	margin-top: 25%;
+	width: 90%;
+	padding: 1% 5%;
+	padding-bottom: 3%;
+	color: slategray;
+	background: rgb(0,0,0);
+}
+.ys-not-none {
+	display: block;
+}
+.ys-none {
+	display: none;
+}
+.trans {
+	background: transparent!important;
+	border: 1px solid slategray;
+}
+.trans:hover {
+	color: white!important;
+	background: black!important;
+	border: 1px solid white;
+}
+
+.chat-width {
+	width: 60%;
+}
+
+
+
+.comment-area {
+	width: 96%;
+	height: auto;
+	padding: 1% 2%;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: rgb(248,248,248);
+}
+
+.small-img {
+	width: 9%;
+	height: 35px;
+	border-radius: 100px;
+}
+.post-img {
+	width: 64%;
+	min-height: 250px;
+	max-height: 450px;
+	padding-right: 0.5%;
+}
+.small-post-img {
+	width: 33%;
+	min-height: 123px;
+	max-height: 225px;
+}
+.profile-img {
+	min-width: 65%;
+	max-width: 75%;
+	min-height: 180px;
+	max-height: 220px;
+}
+.comment-media {
+	min-width: 25%;
+	max-width: 45%;
+	height: 140;
+}
+.search-img {
+	width: 100%;
+	min-height: 145px;
+	max-height: 195px;
+}
+video:hover {
+	opacity: 0.5;
+}
+.edit-img-small {
+	width: 25%;
+	height: 90px;
+}
+.search-width {
+	width: 35%!important;
+}
+
+
+
+.small-text {
+	font-size: 13px;
+}
+.medium-text {
+	font-size: 18px;
+}
+.big-text {
+	font-size: 20px;
+}
+.huge-text {
+	font-size: 25px;
+}
+.extreme-text {
+	font-size: 35px;
+}
+.pad {
+	padding: 2.1%;
+}
+.pad-plus {
+	padding: 4.1%;
+}
+.sixty-plus {
+	width: 70%;
+} 
+.thirty-plus {
+	width: 40%;
+} 
+.eighty {
+	width: 87%;
+} 
+}
